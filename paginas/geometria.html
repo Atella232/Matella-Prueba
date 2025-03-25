@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas 1º ESO - Geometría</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/numeros.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <h1>Geometría en Matemáticas</h1>
+        </div>
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-logo">Geometría&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <div class="navbar-menu">
+                <a href="../index.html" class="navbar-item">Inicio</a>
+                <div class="dropdown">
+                    <a href="#" class="navbar-item dropdown-btn">Temas</a>
+                    <div class="dropdown-content">
+                        <a href="numeros-naturales.html">Números Naturales</a>
+                        <a href="divisibilidad.html">Divisibilidad</a>
+                        <a href="numeros-enteros.html">Números Enteros</a>
+                        <a href="fracciones.html">Fracciones</a>
+                        <a href="algebra.html">Álgebra</a>
+                        <a href="geometria.html" class="active">Geometría</a>
+                        <a href="estadistica.html">Estadística</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="teoria-geometria" class="seccion-contenedor">
+            <h2>Geometría</h2>
+            
+            <div class="tarjetas-secciones">
+                <div class="tarjeta" data-modal="triangulos">
+                    <h3> Triángulos</h3>
+                    <p>Clasificación y propiedades de triángulos</p>
+                    <a href="#" class="btn abrir-modal btn-mas-informacion">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="cuadrilateros">
+                    <h3> Cuadriláteros</h3>
+                    <p>Tipos y características de cuadriláteros</p>
+                    <a href="#" class="btn abrir-modal btn-mas-informacion">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="pitagoras">
+                    <h3> Teorema de Pitágoras</h3>
+                    <p>Aplicaciones y fórmula del teorema</p>
+                    <a href="#" class="btn abrir-modal btn-mas-informacion">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="areas-perimetros">
+                    <h3> Áreas y Perímetros</h3>
+                    <p>Cálculo de áreas de figuras planas</p>
+                    <a href="#" class="btn abrir-modal btn-mas-informacion">Más Información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="herramientas-interactivas" class="seccion-contenedor">
+            <h2>Herramientas Interactivas</h2>
+            <div class="container">
+                <h1 class="title">Constructor de Formas Geométricas</h1>
+                
+                <!-- Selector de modo -->
+                <div class="mode-selector">
+                    <button id="btn-formak" class="btn btn-mode btn-selected">Formas</button>
+                    <button id="btn-teoremak" class="btn btn-mode">Teoremas</button>
+                </div>
+                
+                <!-- Selector de formas -->
+                <div id="formak-selector" class="shape-selector">
+                    <button id="btn-triangelua" class="btn btn-shape btn-selected">Triángulo</button>
+                    <button id="btn-laukizuzena" class="btn btn-shape">Rectángulo</button>
+                    <button id="btn-zirkulua" class="btn btn-shape">Círculo</button>
+                    <button id="btn-erronboa" class="btn btn-shape">Rombo</button>
+                </div>
+                
+                <!-- Selector de teoremas (oculto inicialmente) -->
+                <div id="teoremak-selector" class="shape-selector" style="display: none;">
+                    <button id="btn-pitagoras" class="btn btn-theorem btn-selected">Pitágoras</button>
+                </div>
+                
+                <div class="main-content">
+                    <!-- Panel izquierdo - Visualización y controles -->
+                    <div class="panel panel-main">
+                        <div class="panel-row">
+                            <!-- Visualización -->
+                            <div class="panel-col visualization">
+                                <h2 class="subtitle" id="visualization-title">Forma</h2>
+                                <div id="visualization-container" class="visualization-container">
+                                    <!-- Aquí se renderiza el SVG -->
+                                </div>
+                                
+                                <div id="properties-container" class="properties-container">
+                                    <!-- Información de propiedades -->
+                                </div>
+                            </div>
+                            
+                            <!-- Controles -->
+                            <div class="panel-col controls">
+                                <h2 class="subtitle">Controles</h2>
+                                <div id="controls-container" class="controls-container">
+                                    <!-- Aquí se renderizan los controles -->
+                                </div>
+                                <div id="classification-container" class="classification-container">
+                                    <!-- Clasificación (para triángulos) -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Panel derecho - Información adicional -->
+                    <div class="panel panel-info">
+                        <h2 class="subtitle">Detalles</h2>
+                        <div id="details-container" class="details-container">
+                            <!-- Información detallada -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales -->
+    <div id="modal-triangulos" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-cuadrilateros" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-pitagoras" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-areas-perimetros" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+
+    <footer>
+        <p> 2025 Matemáticas 1º ESO - Sección de Geometría</p>
+        <p>Desarrollado con  para estudiantes de Educación Secundaria</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/modales-geometria.js"></script>
+    <script src="../js/herramienta-geometria.js"></script>
+</body>
+</html>

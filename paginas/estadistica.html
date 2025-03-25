@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadística - Matemáticas 1º ESO</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+    <meta name="description" content="Teoría y conceptos de estadística para 1º ESO">
+    <meta name="keywords" content="matemáticas, estadística, ESO, datos, probabilidad">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <h1>Estadística en Matemáticas</h1>
+        </div>
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-logo">Estadística&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <div class="navbar-menu">
+                <a href="../index.html" class="navbar-item">Inicio</a>
+                <div class="dropdown">
+                    <a href="#" class="navbar-item dropdown-btn">Temas</a>
+                    <div class="dropdown-content">
+                        <a href="numeros-naturales.html">Números Naturales</a>
+                        <a href="divisibilidad.html">Divisibilidad</a>
+                        <a href="numeros-enteros.html">Números Enteros</a>
+                        <a href="fracciones.html">Fracciones</a>
+                        <a href="algebra.html">Álgebra</a>
+                        <a href="geometria.html">Geometría</a>
+                        <a href="estadistica.html" class="active">Estadística</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="teoria-estadistica" class="seccion-contenedor">
+            <h2>Teoría de Estadística</h2>
+            <div class="teoria">
+                <p>La estadística analiza y interpreta datos para obtener información significativa.</p>
+                <div class="timeline-numeros">
+                    <div class="timeline-item">
+                        <span class="timeline-marker">📊</span>
+                        <h3>Recolección de Datos</h3>
+                        <p>Obtención sistemática de información</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-marker">📈</span>
+                        <h3>Análisis</h3>
+                        <p>Procesamiento y interpretación</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-marker">🎲</span>
+                        <h3>Probabilidad</h3>
+                        <p>Estudio de eventos aleatorios</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tipos-estadistica" class="seccion-contenedor">
+            <h2>Conceptos Fundamentales</h2>
+            <div class="tarjetas-secciones">
+                <div class="tarjeta">
+                    <h3>Recolección de Datos</h3>
+                    <p>Obtención sistemática de información</p>
+                    <a href="#" class="btn btn-mas-informacion">Más Información</a>
+                </div>
+                <div class="tarjeta">
+                    <h3>Medidas de Tendencia Central</h3>
+                    <p>Media, mediana y moda</p>
+                    <a href="#" class="btn btn-mas-informacion">Más Información</a>
+                </div>
+                <div class="tarjeta">
+                    <h3>Probabilidad</h3>
+                    <p>Estudio de eventos aleatorios</p>
+                    <a href="#" class="btn btn-mas-informacion">Más Información</a>
+                </div>
+                <div class="tarjeta">
+                    <h3>Representación Gráfica</h3>
+                    <p>Visualización de datos</p>
+                    <a href="#" class="btn btn-mas-informacion">Más Información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="herramientas-interactivas" class="seccion-contenedor">
+            <h2>Herramientas Interactivas</h2>
+            <div class="herramientas">
+                <div class="herramienta">
+                    <h3>Calculadora de Medidas</h3>
+                    <div class="calculadora">
+                        <textarea id="datos-entrada" placeholder="Introduce datos separados por comas&#10;Ejemplo: 2, 4, 6, 8, 10"></textarea>
+                        <div class="opciones-medidas">
+                            <label>
+                                <input type="checkbox" id="media" checked> Media
+                            </label>
+                            <label>
+                                <input type="checkbox" id="mediana"> Mediana
+                            </label>
+                            <label>
+                                <input type="checkbox" id="moda"> Moda
+                            </label>
+                        </div>
+                        <button onclick="calcularMedidas()">Calcular</button>
+                        <div id="resultado-medidas">
+                            <p id="resultado-media"></p>
+                            <p id="resultado-mediana"></p>
+                            <p id="resultado-moda"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="herramienta">
+                    <h3>Quiz de Probabilidad</h3>
+                    <div class="quiz">
+                        <p id="pregunta-quiz">Si lanzas un dado, ¿cuál es la probabilidad de sacar un 6?</p>
+                        <div class="opciones-quiz">
+                            <button onclick="verificarRespuesta(1/6)">1/6</button>
+                            <button onclick="verificarRespuesta(1/3)">1/3</button>
+                            <button onclick="verificarRespuesta(1/2)">1/2</button>
+                            <button onclick="verificarRespuesta(1/4)">1/4</button>
+                        </div>
+                        <p id="resultado-quiz"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2025 Matemáticas 1º ESO - Sección de Estadística</p>
+        <p>Desarrollado con ❤️ para estudiantes de Educación Secundaria</p>
+    </footer>
+
+    <script>
+        function calcularMedidas() {
+            const datosEntrada = document.getElementById('datos-entrada').value;
+            const datos = datosEntrada.split(',').map(d => parseFloat(d.trim())).filter(d => !isNaN(d));
+            
+            const resultadoMedia = document.getElementById('resultado-media');
+            const resultadoMediana = document.getElementById('resultado-mediana');
+            const resultadoModa = document.getElementById('resultado-moda');
+
+            if (datos.length === 0) {
+                resultadoMedia.textContent = 'Introduce datos válidos';
+                return;
+            }
+
+            // Media
+            if (document.getElementById('media').checked) {
+                const media = datos.reduce((a, b) => a + b, 0) / datos.length;
+                resultadoMedia.textContent = `Media: ${media.toFixed(2)}`;
+            } else {
+                resultadoMedia.textContent = '';
+            }
+
+            // Mediana
+            if (document.getElementById('mediana').checked) {
+                const datosSorted = datos.sort((a, b) => a - b);
+                const mitad = Math.floor(datosSorted.length / 2);
+                const mediana = datosSorted.length % 2 
+                    ? datosSorted[mitad] 
+                    : (datosSorted[mitad - 1] + datosSorted[mitad]) / 2;
+                resultadoMediana.textContent = `Mediana: ${mediana.toFixed(2)}`;
+            } else {
+                resultadoMediana.textContent = '';
+            }
+
+            // Moda
+            if (document.getElementById('moda').checked) {
+                const frecuencias = {};
+                datos.forEach(d => {
+                    frecuencias[d] = (frecuencias[d] || 0) + 1;
+                });
+                const moda = Object.entries(frecuencias).reduce((a, b) => b[1] > a[1] ? b : a)[0];
+                resultadoModa.textContent = `Moda: ${moda}`;
+            } else {
+                resultadoModa.textContent = '';
+            }
+        }
+
+        function verificarRespuesta(respuesta) {
+            const resultadoQuiz = document.getElementById('resultado-quiz');
+            const respuestaCorrecta = 1/6;
+
+            if (respuesta === respuestaCorrecta) {
+                resultadoQuiz.textContent = '¡Correcto! ';
+                resultadoQuiz.style.color = 'green';
+            } else {
+                resultadoQuiz.textContent = 'Incorrecto. Inténtalo de nuevo. ';
+                resultadoQuiz.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas 1º ESO - Divisibilidad</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/numeros.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <h1>Divisibilidad en Matemáticas</h1>
+        </div>
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-logo">Divisibilidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <div class="navbar-menu">
+                <a href="../index.html" class="navbar-item">Inicio</a>
+                <div class="dropdown">
+                    <a href="#" class="navbar-item dropdown-btn">Temas</a>
+                    <div class="dropdown-content">
+                        <a href="numeros-naturales.html">Números Naturales</a>
+                        <a href="divisibilidad.html" class="active">Divisibilidad</a>
+                        <a href="numeros-enteros.html">Números Enteros</a>
+                        <a href="fracciones.html">Fracciones</a>
+                        <a href="algebra.html">Álgebra</a>
+                        <a href="geometria.html">Geometría</a>
+                        <a href="estadistica.html">Estadística</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="teoria-divisibilidad" class="seccion-contenedor">
+            <h2>Divisibilidad</h2>
+            
+            <div class="tarjetas-secciones">
+                <div class="tarjeta" data-modal="relacion-divisibilidad">
+                    <h3>📊 Relación de Divisibilidad</h3>
+                    <p>Conceptos básicos de divisibilidad</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="multiplos">
+                    <h3>🔢 Múltiplos</h3>
+                    <p>Definición y ejemplos de múltiplos</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="divisores">
+                    <h3>🧩 Divisores</h3>
+                    <p>Identificación de divisores de un número</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="criterios-divisibilidad">
+                    <h3>📝 Criterios de Divisibilidad</h3>
+                    <p>Reglas para identificar divisibilidad</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="primos-compuestos">
+                    <h3>🔍 Primos y Compuestos</h3>
+                    <p>Clasificación de números</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="mcm">
+                    <h3>📈 Mínimo Común Múltiplo</h3>
+                    <p>Cálculo del m.c.m.</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="mcd">
+                    <h3>📉 Máximo Común Divisor</h3>
+                    <p>Cálculo del m.c.d.</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="herramientas-interactivas" class="seccion-contenedor">
+            <h2>Herramientas Interactivas</h2>
+            <div class="herramientas">
+                <div class="herramienta">
+                    <h3>Calculadora de Divisibilidad</h3>
+                    <div class="calculadora">
+                        <input type="number" id="num1" placeholder="Número 1">
+                        <select id="operacion">
+                            <option value="divisibilidad">Divisibilidad</option>
+                            <option value="mcm">MCM</option>
+                            <option value="mcd">MCD</option>
+                        </select>
+                        <input type="number" id="num2" placeholder="Número 2">
+                        <button onclick="calcularDivisibilidad()">Calcular</button>
+                        <p id="resultado">Resultado: </p>
+                    </div>
+                </div>
+                <div class="herramienta">
+                    <h3>Quiz de Divisibilidad</h3>
+                    <div class="quiz">
+                        <p id="pregunta-quiz">¿Es 24 divisible por 6?</p>
+                        <div class="opciones-quiz">
+                            <button onclick="verificarRespuesta(true)">Sí</button>
+                            <button onclick="verificarRespuesta(false)">No</button>
+                        </div>
+                        <p id="resultado-quiz"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales -->
+    <div id="modal-relacion-divisibilidad" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-multiplos" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-divisores" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-criterios-divisibilidad" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-primos-compuestos" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-mcm" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-mcd" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+
+    <footer>
+        <p> 2025 Matemáticas 1º ESO - Sección de Divisibilidad</p>
+        <p>Desarrollado con ❤️ para estudiantes de Educación Secundaria</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/modales-divisibilidad.js"></script>
+</body>
+</html>
