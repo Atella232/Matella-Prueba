@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/main.js" defer></script>
     <meta name="description" content="Teoría y conceptos de álgebra para 1º ESO">
-    <meta name="keywords" content="matemáticas, álgebra, ESO, variables, ecuaciones">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>">
+    <meta name="keywords" content="matemáticas, álgebra, expresiones algebraicas, ecuaciones">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔢</text></svg>">
 </head>
 <body>
     <header>
         <div class="logo-titulo">
-            <h1>Álgebra en Matemáticas</h1>
+            <h1>Álgebra</h1>
         </div>
         <nav class="navbar">
             <a href="../index.html" class="navbar-logo">Álgebra&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -26,7 +26,7 @@
                         <a href="divisibilidad.html">Divisibilidad</a>
                         <a href="numeros-enteros.html">Números Enteros</a>
                         <a href="fracciones.html">Fracciones</a>
-                        <a href="algebra.html">Álgebra</a>
+                        <a href="algebra.html" class="active">Álgebra</a>
                         <a href="geometria.html">Geometría</a>
                         <a href="estadistica.html">Estadística</a>
                     </div>
@@ -36,52 +36,59 @@
     </header>
 
     <main>
-        <section id="teoria-algebra" class="seccion-contenedor">
-            <h2>Teoría de Álgebra</h2>
-            <div class="teoria">
-                <p>El álgebra es un lenguaje matemático que usa símbolos para representar y resolver problemas.</p>
-                <div class="timeline-numeros">
-                    <div class="timeline-item">
-                        <span class="timeline-marker">🔤</span>
-                        <h3>Variables</h3>
-                        <p>Símbolos para representar valores desconocidos</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-marker">➕</span>
-                        <h3>Ecuaciones</h3>
-                        <p>Igualdades con una o más variables</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-marker">📊</span>
-                        <h3>Expresiones</h3>
-                        <p>Combinaciones de números y variables</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="tipos-algebra" class="seccion-contenedor">
-            <h2>Conceptos Fundamentales</h2>
+        <section id="teoria-numeros" class="seccion-contenedor">
+            <h2>Álgebra</h2>
+            
             <div class="tarjetas-secciones">
-                <div class="tarjeta">
-                    <h3>Variables</h3>
-                    <p>Símbolos para representar valores desconocidos</p>
-                    <a href="#" class="btn btn-mas-informacion">Más información</a>
+                <div class="tarjeta" data-modal="letras-numeros">
+                    <h3>✳️ Letras en vez de números</h3>
+                    <p>Uso de incógnitas y variables</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
                 </div>
-                <div class="tarjeta">
-                    <h3>Ecuaciones</h3>
-                    <p>Igualdades matemáticas con incógnitas</p>
-                    <a href="#" class="btn btn-mas-informacion">Más información</a>
+                <div class="tarjeta" data-modal="expresiones-algebraicas">
+                    <h3>✳️ Expresiones algebraicas</h3>
+                    <p>Combinación de números, letras y operaciones</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
                 </div>
-                <div class="tarjeta">
-                    <h3>Expresiones</h3>
-                    <p>Combinaciones de números y variables</p>
-                    <a href="#" class="btn btn-mas-informacion">Más información</a>
+                <div class="tarjeta" data-modal="suma-resta-monomios">
+                    <h3>🔹 Suma y resta de monomios</h3>
+                    <p>Operaciones con términos semejantes</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
                 </div>
-                <div class="tarjeta">
-                    <h3>Operaciones</h3>
-                    <p>Manipulación algebraica de expresiones</p>
-                    <a href="#" class="btn btn-mas-informacion">Más información</a>
+                <div class="tarjeta" data-modal="multiplicacion-monomios">
+                    <h3>🔹 Multiplicación de monomios</h3>
+                    <p>Reglas para multiplicar términos algebraicos</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="multiplicacion-monomio-suma">
+                    <h3>🔹 Multiplicación de monomio por suma</h3>
+                    <p>Aplicación de la propiedad distributiva</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="division-monomios">
+                    <h3>🔹 División de monomios</h3>
+                    <p>Simplificación de coeficientes y exponentes</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="ecuaciones">
+                    <h3>✳️ Ecuaciones</h3>
+                    <p>Igualdades con incógnitas</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="tecnicas-ecuaciones">
+                    <h3>✳️ Técnicas para resolver ecuaciones</h3>
+                    <p>Pasos para despejar incógnitas</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="ecuaciones-primer-grado">
+                    <h3>✳️ Ecuaciones de primer grado</h3>
+                    <p>Ecuaciones con una incógnita</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="problemas-ecuaciones">
+                    <h3>✳️ Problemas con ecuaciones</h3>
+                    <p>Aplicaciones prácticas del álgebra</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
                 </div>
             </div>
         </section>
@@ -92,20 +99,20 @@
                 <div class="herramienta">
                     <h3>Calculadora de Ecuaciones</h3>
                     <div class="calculadora">
-                        <input type="text" id="ecuacion" placeholder="Ej: x + 5 = 10">
+                        <input type="text" id="ecuacion" placeholder="Ejemplo: 2x + 5 = 15">
                         <button onclick="resolverEcuacion()">Resolver</button>
-                        <p id="resultado-ecuacion">Resultado: </p>
+                        <p id="resultado">Resultado: </p>
                     </div>
                 </div>
                 <div class="herramienta">
                     <h3>Quiz de Álgebra</h3>
                     <div class="quiz">
-                        <p id="pregunta-quiz">¿Cuánto vale x en la ecuación 2x + 3 = 11?</p>
+                        <p id="pregunta-quiz">¿Cuál es el valor de x en la ecuación 3x - 4 = 8?</p>
                         <div class="opciones-quiz">
+                            <button onclick="verificarRespuesta(2)">2</button>
                             <button onclick="verificarRespuesta(4)">4</button>
-                            <button onclick="verificarRespuesta(5)">5</button>
                             <button onclick="verificarRespuesta(6)">6</button>
-                            <button onclick="verificarRespuesta(3)">3</button>
+                            <button onclick="verificarRespuesta(12)">12</button>
                         </div>
                         <p id="resultado-quiz"></p>
                     </div>
@@ -114,50 +121,44 @@
         </section>
     </main>
 
+    <!-- Modales -->
+    <div id="modal-letras-numeros" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-expresiones-algebraicas" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-suma-resta-monomios" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-multiplicacion-monomios" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-multiplicacion-monomio-suma" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-division-monomios" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-ecuaciones" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-tecnicas-ecuaciones" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-ecuaciones-primer-grado" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-problemas-ecuaciones" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+
     <footer>
         <p> 2025 Matemáticas 1º ESO - Sección de Álgebra</p>
         <p>Desarrollado con ❤️ para estudiantes de Educación Secundaria</p>
     </footer>
 
-    <script>
-        function resolverEcuacion() {
-            const ecuacion = document.getElementById('ecuacion').value;
-            const resultadoElemento = document.getElementById('resultado-ecuacion');
-
-            try {
-                // Simplificación básica de ecuaciones
-                const partes = ecuacion.split('=').map(p => p.trim());
-                if (partes.length !== 2) {
-                    resultadoElemento.textContent = 'Formato de ecuación inválido';
-                    return;
-                }
-
-                // Ejemplo simple de resolución
-                if (partes[0].includes('x')) {
-                    const numero = parseInt(partes[1]);
-                    const coeficiente = partes[0].replace('x', '').trim() || '1';
-                    const x = numero / parseInt(coeficiente);
-                    resultadoElemento.textContent = `x = ${x}`;
-                } else {
-                    resultadoElemento.textContent = 'No se puede resolver';
-                }
-            } catch (error) {
-                resultadoElemento.textContent = 'Error al resolver';
-            }
-        }
-
-        function verificarRespuesta(respuesta) {
-            const resultadoQuiz = document.getElementById('resultado-quiz');
-            const respuestaCorrecta = 4;
-
-            if (respuesta === respuestaCorrecta) {
-                resultadoQuiz.textContent = '¡Correcto! 🎉';
-                resultadoQuiz.style.color = 'green';
-            } else {
-                resultadoQuiz.textContent = 'Incorrecto. Inténtalo de nuevo. 🤔';
-                resultadoQuiz.style.color = 'red';
-            }
-        }
-    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modales-algebra.js"></script>
 </body>
 </html>
