@@ -305,6 +305,23 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM cargado, inicializando modales');
     const modalButtons = document.querySelectorAll('.abrir-modal');
     const modals = document.querySelectorAll('.modal-overlay');
+    
+    // Scroll to the top of the page, ensuring header and navigation are visible
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+    });
+
+    // Scroll to the top section for a calm, focused experience
+    const topSection = document.getElementById('teoria-numeros');
+    const herramientasSection = document.getElementById('herramientas-interactivas');
+    
+    if (topSection) {
+        // Hide the interactive tools section by default
+        if (herramientasSection) {
+            herramientasSection.style.display = 'none';
+        }
+    }
 
     console.log(`Botones de modal encontrados: ${modalButtons.length}`);
     console.log(`Modales encontrados: ${modals.length}`);
@@ -360,4 +377,38 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    
+    // Optional: Add a button to show/hide interactive tools
+    const toggleToolsBtn = document.createElement('button');
+    toggleToolsBtn.textContent = 'Mostrar Herramienta Interactiva';
+    toggleToolsBtn.classList.add('btn', 'btn-verde');  
+    toggleToolsBtn.style.marginTop = '20px';
+    toggleToolsBtn.style.display = 'inline-block';
+    toggleToolsBtn.style.width = 'auto';
+    toggleToolsBtn.style.padding = '10px 15px';  
+    toggleToolsBtn.style.fontSize = '16px';  
+    toggleToolsBtn.style.boxSizing = 'border-box';
+    
+    toggleToolsBtn.addEventListener('click', () => {
+        if (herramientasSection.style.display === 'none') {
+            herramientasSection.style.display = 'block';
+            toggleToolsBtn.textContent = 'Ocultar Herramienta Interactiva';
+            herramientasSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        } else {
+            herramientasSection.style.display = 'none';
+            toggleToolsBtn.textContent = 'Mostrar Herramienta Interactiva';
+            topSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+
+    // Add the toggle button after the top section
+    if (topSection) {
+        topSection.appendChild(toggleToolsBtn);
+    }
 });
