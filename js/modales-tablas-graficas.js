@@ -250,38 +250,28 @@ document.addEventListener('DOMContentLoaded', () => {
                         
                         <!-- Puntos que representan a los miembros de la familia -->
                         <!-- David (8 años, 120cm) -->
-                        <circle cx="90" y="240" r="7" fill="#4CAF50" />
+                        <circle cx="90" cy="240" r="7" fill="#4CAF50" />
                         <text x="90" y="230" font-size="12" text-anchor="middle" font-weight="bold">David</text>
                         
                         <!-- Ana (14 años, 160cm) -->
-                        <circle cx="120" y="160" r="7" fill="#2196F3" />
+                        <circle cx="120" cy="160" r="7" fill="#2196F3" />
                         <text x="120" y="150" font-size="12" text-anchor="middle" font-weight="bold">Ana</text>
                         
                         <!-- Carlos (16 años, 170cm) -->
-                        <circle cx="130" y="140" r="7" fill="#9C27B0" />
+                        <circle cx="130" cy="140" r="7" fill="#9C27B0" />
                         <text x="130" y="130" font-size="12" text-anchor="middle" font-weight="bold">Carlos</text>
                         
                         <!-- Bernardo (42 años, 190cm) -->
-                        <circle cx="250" y="100" r="7" fill="#F44336" />
+                        <circle cx="250" cy="100" r="7" fill="#F44336" />
                         <text x="250" y="90" font-size="12" text-anchor="middle" font-weight="bold">Bernardo</text>
                         
                         <!-- María (40 años, 168cm) -->
-                        <circle cx="240" y="146" r="7" fill="#FF9800" />
+                        <circle cx="240" cy="146" r="7" fill="#FF9800" />
                         <text x="240" y="136" font-size="12" text-anchor="middle" font-weight="bold">María</text>
                         
                         <!-- Abuelo (72 años, 175cm) -->
-                        <circle cx="400" y="135" r="7" fill="#795548" />
+                        <circle cx="400" cy="135" r="7" fill="#795548" />
                         <text x="400" y="125" font-size="12" text-anchor="middle" font-weight="bold">Abuelo</text>
-                        
-                        <!-- Anotaciones explicativas -->
-                        <path d="M 250 100 L 280 60" stroke="#F44336" stroke-width="1.5" stroke-dasharray="4" />
-                        <text x="340" y="60" font-size="12" fill="#F44336" font-style="italic">Bernardo: mayor estatura</text>
-                        
-                        <path d="M 90 240 L 60 260" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="4" />
-                        <text x="120" y="270" font-size="12" fill="#4CAF50" font-style="italic">David: menor estatura y edad</text>
-                        
-                        <path d="M 400 135 L 430 170" stroke="#795548" stroke-width="1.5" stroke-dasharray="4" />
-                        <text x="390" y="185" font-size="12" fill="#795548" font-style="italic">Abuelo: mayor edad</text>
                     </svg>
                 </div>
 
@@ -700,34 +690,34 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
 
                     <div class="example-qualitative" style="flex: 1; min-width: 300px;">
-                        <h4 style="background-color: #7b1fa2; color: white; padding: 8px; border-radius: 5px 5px 0 0; margin: 0;">Variable cualitativa: Estación de nacimiento</h4>
+                        <h4 style="background-color: #7b1fa2; color: white; padding: 8px; border-radius: 5px 5px 0 0; margin: 0;">Variable cualitativa: Color favorito</h4>
                         <div style="display: flex;">
                             <div style="flex: 1;">
                                 <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
                                     <tr style="background-color: #f2f2f2;">
-                                        <th style="padding: 10px; border: 1px solid #ddd; text-align: center;">Estación</th>
+                                        <th style="padding: 10px; border: 1px solid #ddd; text-align: center;">Color</th>
                                         <th style="padding: 10px; border: 1px solid #ddd; text-align: center;">Frecuencia (f)</th>
                                         <th style="padding: 10px; border: 1px solid #ddd; text-align: center;">Frecuencia relativa (fr)</th>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px; border: 1px solid #ddd;">Primavera</td>
+                                        <td style="padding: 10px; border: 1px solid #ddd;">Azul</td>
+                                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">12</td>
+                                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">33,3%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid #ddd;">Rojo</td>
+                                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">10</td>
+                                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">27,8%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid #ddd;">Verde</td>
                                         <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">8</td>
                                         <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">22,2%</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px; border: 1px solid #ddd;">Verano</td>
+                                        <td style="padding: 10px; border: 1px solid #ddd;">Amarillo</td>
                                         <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">6</td>
                                         <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">16,7%</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 10px; border: 1px solid #ddd;">Otoño</td>
-                                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">9</td>
-                                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">25,0%</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 10px; border: 1px solid #ddd;">Invierno</td>
-                                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">13</td>
-                                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">36,1%</td>
                                     </tr>
                                     <tr style="background-color: #f2f2f2; font-weight: bold;">
                                         <td style="padding: 10px; border: 1px solid #ddd;">Total</td>
@@ -737,33 +727,31 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </table>
                             </div>
                             <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
-                                <svg width="220" height="220" viewBox="0 0 220 220">
+                                <svg width="220" height="220">
                                     <!-- Título del gráfico -->
                                     <text x="110" y="15" text-anchor="middle" font-size="12" font-weight="bold">Diagrama de sectores</text>
                                     
-                                    <!-- Gráfico circular -->
-                                    <!-- Invierno: 36.1% (129.96°) -->
-                                    <path d="M 110,110 L 110,40 A 70,70 0 0,1 179.14,133.82 Z" fill="#7b1fa2" />
-                                    <text x="150" y="80" font-size="12" fill="white">Invierno</text>
-                                    <text x="150" y="95" font-size="12" fill="white">36.1%</text>
+                                    <!-- Sectores del gráfico circular -->
+                                    <!-- Calculamos los ángulos precisos basados en los porcentajes -->
+                                    <!-- Azul: 33.3% (119.88°) - De 0° a 119.88° -->
+                                    <path d="M 110,110 L 110,40 A 70,70 0 0,1 160.44,164.25 Z" fill="#1976D2" />
+                                    <text x="140" y="80" font-size="13" font-weight="bold" fill="black">Azul</text>
+                                    <text x="140" y="95" font-size="13" font-weight="bold" fill="black">33,3%</text>
                                     
-                                    <!-- Otoño: 25% (90°) -->
-                                    <path d="M 110,110 L 179.14,133.82 A 70,70 0 0,1 110,180 Z" fill="#9c27b0" />
-                                    <text x="140" y="150" font-size="12" fill="white">Otoño</text>
-                                    <text x="140" y="165" font-size="12" fill="white">25%</text>
+                                    <!-- Rojo: 27.8% (100.08°) - De 119.88° a 219.96° -->
+                                    <path d="M 110,110 L 160.44,164.25 A 70,70 0 0,1 59.56,164.25 Z" fill="#D32F2F" />
+                                    <text x="150" y="150" font-size="13" font-weight="bold" fill="black">Rojo</text>
+                                    <text x="150" y="165" font-size="13" font-weight="bold" fill="black">27,8%</text>
                                     
-                                    <!-- Primavera: 22.2% (79.92°) -->
-                                    <path d="M 110,110 L 110,180 A 70,70 0 0,1 40.86,133.82 Z" fill="#ba68c8" />
-                                    <text x="70" y="150" font-size="12" fill="white">Primavera</text>
-                                    <text x="70" y="165" font-size="12" fill="white">22.2%</text>
+                                    <!-- Verde: 22.2% (79.92°) - De 219.96° a 299.88° -->
+                                    <path d="M 110,110 L 59.56,164.25 A 70,70 0 0,1 59.56,55.75 Z" fill="#388E3C" />
+                                    <text x="60" y="140" font-size="13" font-weight="bold" fill="black">Verde</text>
+                                    <text x="60" y="155" font-size="13" font-weight="bold" fill="black">22,2%</text>
                                     
-                                    <!-- Verano: 16.7% (60.12°) -->
-                                    <path d="M 110,110 L 40.86,133.82 A 70,70 0 0,1 40.86,86.18 L 110,110 Z" fill="#ce93d8" />
-                                    <text x="50" y="110" font-size="12">Verano</text>
-                                    <text x="50" y="125" font-size="12">16.7%</text>
-                                    
-                                    <!-- Completar el círculo -->
-                                    <path d="M 110,110 L 40.86,86.18 A 70,70 0 0,1 110,40 Z" fill="#e1bee7" />
+                                    <!-- Amarillo: 16.7% (60.12°) - De 299.88° a 360° -->
+                                    <path d="M 110,110 L 59.56,55.75 A 70,70 0 0,1 110,40 Z" fill="#FBC02D" />
+                                    <text x="80" y="65" font-size="13" font-weight="bold" fill="black">Amarillo</text>
+                                    <text x="80" y="80" font-size="13" font-weight="bold" fill="black">16,7%</text>
                                 </svg>
                             </div>
                         </div>
@@ -778,7 +766,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h4 style="margin-top: 0; color: #0277bd;">Frecuencia absoluta (f)</h4>
                             <div style="background-color: #e1f5fe; padding: 10px; border-radius: 5px;">
                                 <p><strong>Definición:</strong> Número de veces que aparece un valor o categoría</p>
-                                <p><strong>Ejemplo:</strong> 16 estudiantes tienen exactamente 1 hermano</p>
+                                <p><strong>Ejemplo:</strong> 12 estudiantes eligieron el color azul como favorito</p>
                                 <p><strong>Suma:</strong> La suma de todas las frecuencias absolutas es igual al número total de datos (N)</p>
                             </div>
                         </div>
@@ -787,7 +775,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div style="background-color: #e1f5fe; padding: 10px; border-radius: 5px;">
                                 <p><strong>Definición:</strong> Proporción que representa respecto al total</p>
                                 <p><strong>Cálculo:</strong> fr = f/N (donde N es el total de datos)</p>
-                                <p><strong>Expresión:</strong> Puede expresarse como fracción (16/36), decimal (0,444) o porcentaje (44,4%)</p>
+                                <p><strong>Expresión:</strong> Puede expresarse como fracción (12/36), decimal (0,333) o porcentaje (33,3%)</p>
                                 <p><strong>Suma:</strong> La suma de todas las frecuencias relativas es igual a 1 (o 100%)</p>
                             </div>
                         </div>
@@ -810,50 +798,255 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
-                <h3>Medidas de Centralización</h3>
+                <h3 class="section-title">Medidas de Centralización</h3>
                 <p>Son valores que resumen o representan el conjunto de datos:</p>
 
-                <h4>Media (promedio)</h4>
-                <ul>
-                    <li>Es la suma de todos los valores dividida entre el número total de datos</li>
-                    <li>Fórmula: \bar{x} = \frac{\sum x_i}{n}</li>
-                    <li>Ejemplo: Para los valores {4, 6, 8, 8, 9, 10, 10, 10}
-                        <ul>
-                            <li>\bar{x} = \frac{4 + 6 + 8 + 8 + 9 + 10 + 10 + 10}{8} = \frac{65}{8} = 8,125</li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="card">
+                    <h4>Media (promedio)</h4>
+                    <div class="visualization-container">
+                        <div class="formula-display">
+                            <span style="font-size: 18px; font-weight: bold;">Media = Suma de todos los valores / n</span>
+                        </div>
+                        <div class="example-visual">
+                            <svg width="300" height="120" viewBox="0 0 300 120">
+                                <!-- Etiquetas valores -->
+                                <text x="20" y="110" text-anchor="middle">4</text>
+                                <text x="50" y="110" text-anchor="middle">6</text>
+                                <text x="80" y="110" text-anchor="middle">8</text>
+                                <text x="110" y="110" text-anchor="middle">8</text>
+                                <text x="140" y="110" text-anchor="middle">9</text>
+                                <text x="170" y="110" text-anchor="middle">10</text>
+                                <text x="200" y="110" text-anchor="middle">10</text>
+                                <text x="230" y="110" text-anchor="middle">10</text>
+                                
+                                <!-- Línea base -->
+                                <line x1="10" y1="100" x2="250" y2="100" stroke="#333" stroke-width="1" />
+                                
+                                <!-- Barras de valores -->
+                                <rect x="10" y="60" width="20" height="40" fill="#4285f4" />
+                                <rect x="40" y="40" width="20" height="60" fill="#4285f4" />
+                                <rect x="70" y="20" width="20" height="80" fill="#4285f4" />
+                                <rect x="100" y="20" width="20" height="80" fill="#4285f4" />
+                                <rect x="130" y="10" width="20" height="90" fill="#4285f4" />
+                                <rect x="160" y="0" width="20" height="100" fill="#4285f4" />
+                                <rect x="190" y="0" width="20" height="100" fill="#4285f4" />
+                                <rect x="220" y="0" width="20" height="100" fill="#4285f4" />
+                                
+                                <!-- Línea de media -->
+                                <line x1="10" y1="19" x2="250" y2="19" stroke="#E53935" stroke-width="2" stroke-dasharray="5,5" />
+                                <text x="260" y="23" fill="#E53935" font-weight="bold">Media: 8,125</text>
+                                
+                                <!-- Leyenda explicativa -->
+                                <text x="10" y="140" fill="#333">Altura de las barras = valor del dato</text>
+                                <text x="10" y="155" fill="#E53935" style="font-weight: bold">Línea roja = Media (8,125)</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Es la suma de todos los valores dividida entre el número total de datos</li>
+                        <li>Fórmula: Media = suma de todos los valores / número de datos</li>
+                        <li>Ejemplo: Para los valores {4, 6, 8, 8, 9, 10, 10, 10}
+                            <div class="calculation-box">
+                                Media = (4 + 6 + 8 + 8 + 9 + 10 + 10 + 10) / 8 = 65 / 8 = 8,125
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-                <h4>Mediana</h4>
-                <ul>
-                    <li>Es el valor central cuando los datos están ordenados</li>
-                    <li>Si hay un número par de datos, es la media de los dos valores centrales</li>
-                    <li>Ejemplo: Para los valores ordenados {4, 6, 8, 8, 9, 10, 10, 10}
-                        <ul>
-                            <li>Hay 8 datos (número par)</li>
-                            <li>Los valores centrales son 8 y 9</li>
-                            <li>Mediana = (8 + 9)/2 = 8,5</li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="card">
+                    <h4>Mediana</h4>
+                    <div class="visualization-container">
+                        <table class="data-table">
+                            <tr>
+                                <td>4</td>
+                                <td>6</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td class="median-left">9</td>
+                                <td class="median-right">10</td>
+                                <td>10</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="arrow-container">
+                                    <span class="arrow">←</span>
+                                </td>
+                                <td colspan="2" class="median-label">Mediana = (8+9)/2 = 8,5</td>
+                                <td colspan="2" class="arrow-container">
+                                    <span class="arrow">→</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <ul>
+                        <li>Es el valor central cuando los datos están ordenados</li>
+                        <li>Si hay un número par de datos, es la media de los dos valores centrales</li>
+                        <li>Ejemplo: Para los valores ordenados {4, 6, 8, 8, 9, 10, 10, 10}
+                            <ul>
+                                <li>Hay 8 datos (número par)</li>
+                                <li>Los valores centrales son 8 y 9</li>
+                                <li>Mediana = (8 + 9)/2 = 8,5</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-                <h4>Moda</h4>
-                <ul>
-                    <li>Es el valor que aparece con mayor frecuencia</li>
-                    <li>Ejemplo: Para los valores {4, 6, 8, 8, 9, 10, 10, 10}
-                        <ul>
-                            <li>Moda = 10 (aparece tres veces)</li>
-                        </ul>
-                    </li>
-                    <li>Puede haber más de una moda (distribución bimodal o multimodal)</li>
-                </ul>
+                <div class="card">
+                    <h4>Moda</h4>
+                    <div class="visualization-container">
+                        <div class="frequency-chart">
+                            <svg width="300" height="120" viewBox="0 0 300 120">
+                                <!-- Ejes -->
+                                <line x1="40" y1="100" x2="280" y2="100" stroke="#333" stroke-width="2" />
+                                <line x1="40" y1="100" x2="40" y2="20" stroke="#333" stroke-width="2" />
+                                <!-- Barras -->
+                                <rect x="60" y="90" width="30" height="10" fill="#4CAF50" />
+                                <rect x="100" y="80" width="30" height="20" fill="#4CAF50" />
+                                <rect x="140" y="70" width="30" height="30" fill="#4CAF50" />
+                                <rect x="180" y="70" width="30" height="30" fill="#4CAF50" />
+                                <rect x="220" y="40" width="30" height="60" fill="#FF5722" />
+                                <!-- Etiquetas -->
+                                <text x="75" y="115" text-anchor="middle">4</text>
+                                <text x="115" y="115" text-anchor="middle">6</text>
+                                <text x="155" y="115" text-anchor="middle">8</text>
+                                <text x="195" y="115" text-anchor="middle">9</text>
+                                <text x="235" y="115" text-anchor="middle" font-weight="bold">10</text>
+                                <!-- Frecuencias -->
+                                <text x="75" y="87" text-anchor="middle" fill="white" font-size="9">1</text>
+                                <text x="115" y="77" text-anchor="middle" fill="white" font-size="9">1</text>
+                                <text x="155" y="67" text-anchor="middle" fill="white" font-size="9">2</text>
+                                <text x="195" y="67" text-anchor="middle" fill="white" font-size="9">1</text>
+                                <text x="235" y="37" text-anchor="middle" fill="white" font-size="9">3</text>
+                                <!-- Flecha a la moda -->
+                                <text x="235" y="25" text-anchor="middle" font-weight="bold" fill="#FF5722">MODA</text>
+                                <path d="M235,30 L235,37" stroke="#FF5722" stroke-width="2" marker-end="url(#arrowhead)" />
+                                <defs>
+                                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#FF5722" />
+                                    </marker>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Es el valor que aparece con mayor frecuencia</li>
+                        <li>Ejemplo: Para los valores {4, 6, 8, 8, 9, 10, 10, 10}
+                            <ul>
+                                <li>Moda = 10 (aparece tres veces)</li>
+                            </ul>
+                        </li>
+                        <li>Puede haber más de una moda (distribución bimodal o multimodal)</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-container">
+                    <h3>Comparación visual de medidas</h3>
+                    <div class="visual-comparison">
+                        <svg width="100%" height="150" viewBox="0 0 500 150">
+                            <!-- Datos -->
+                            <rect x="40" y="70" width="30" height="30" fill="#BBDEFB" />
+                            <rect x="80" y="60" width="30" height="40" fill="#BBDEFB" />
+                            <rect x="120" y="50" width="30" height="50" fill="#BBDEFB" />
+                            <rect x="160" y="50" width="30" height="50" fill="#BBDEFB" />
+                            <rect x="200" y="40" width="30" height="60" fill="#BBDEFB" />
+                            <rect x="240" y="30" width="30" height="70" fill="#BBDEFB" />
+                            <rect x="280" y="30" width="30" height="70" fill="#BBDEFB" />
+                            <rect x="320" y="30" width="30" height="70" fill="#BBDEFB" />
+                            <!-- Línea base -->
+                            <line x1="30" y1="100" x2="370" y2="100" stroke="#333" stroke-width="1" />
+                            <!-- Líneas de medidas -->
+                            <line x1="30" y1="50" x2="370" y2="50" stroke="#E53935" stroke-width="2" stroke-dasharray="5,5" />
+                            <line x1="30" y1="40" x2="370" y2="40" stroke="#1E88E5" stroke-width="2" stroke-dasharray="5,5" />
+                            <line x1="30" y1="30" x2="370" y2="30" stroke="#43A047" stroke-width="2" stroke-dasharray="5,5" />
+                            <!-- Etiquetas -->
+                            <text x="380" y="53" fill="#E53935" font-weight="bold">Media (8,125)</text>
+                            <text x="380" y="43" fill="#1E88E5" font-weight="bold">Mediana (8,5)</text>
+                            <text x="380" y="33" fill="#43A047" font-weight="bold">Moda (10)</text>
+                            <!-- Valores -->
+                            <text x="55" y="115" text-anchor="middle">4</text>
+                            <text x="95" y="115" text-anchor="middle">6</text>
+                            <text x="135" y="115" text-anchor="middle">8</text>
+                            <text x="175" y="115" text-anchor="middle">8</text>
+                            <text x="215" y="115" text-anchor="middle">9</text>
+                            <text x="255" y="115" text-anchor="middle">10</text>
+                            <text x="295" y="115" text-anchor="middle">10</text>
+                            <text x="335" y="115" text-anchor="middle">10</text>
+                            
+                            <!-- Leyenda explicativa -->
+                            <text x="40" y="140" font-size="12">Cada barra representa un valor del conjunto de datos</text>
+                        </svg>
+                    </div>
+                </div>
 
                 <h3>Observaciones</h3>
-                <ul>
-                    <li>Para variables <strong>cualitativas</strong> solo se puede calcular la <strong>moda</strong></li>
-                    <li>Para variables <strong>cuantitativas</strong> se pueden calcular los tres parámetros: media, mediana y moda</li>
-                    <li>La mediana es menos sensible a valores extremos que la media</li>
-                </ul>
+                <div class="observations-container">
+                    <div class="observation-card qualitative">
+                        <h4>Variables Cualitativas</h4>
+                        <div class="observation-content">
+                            <div class="icon-container">
+                                <svg width="60" height="60" viewBox="0 0 60 60">
+                                    <circle cx="30" cy="30" r="25" fill="#E8F5E9" stroke="#66BB6A" stroke-width="2" />
+                                    <text x="30" y="25" text-anchor="middle" font-size="12">Solo</text>
+                                    <text x="30" y="40" text-anchor="middle" font-weight="bold" font-size="16">MODA</text>
+                                </svg>
+                            </div>
+                            <div class="text-container">
+                                <p>Para variables <strong>cualitativas</strong> (colores, marcas, opiniones) solo se puede calcular la <strong>moda</strong></p>
+                                <p class="example">Ejemplo: Color favorito en una clase</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="observation-card quantitative">
+                        <h4>Variables Cuantitativas</h4>
+                        <div class="observation-content">
+                            <div class="icon-container">
+                                <svg width="60" height="60" viewBox="0 0 60 60">
+                                    <circle cx="30" cy="30" r="25" fill="#E3F2FD" stroke="#42A5F5" stroke-width="2" />
+                                    <text x="30" y="20" text-anchor="middle" font-size="10">Se calculan</text>
+                                    <text x="30" y="32" text-anchor="middle" font-weight="bold" font-size="12">MEDIA</text>
+                                    <text x="30" y="44" text-anchor="middle" font-weight="bold" font-size="12">MEDIANA</text>
+                                    <text x="30" y="56" text-anchor="middle" font-weight="bold" font-size="12">MODA</text>
+                                </svg>
+                            </div>
+                            <div class="text-container">
+                                <p>Para variables <strong>cuantitativas</strong> (altura, peso, edad) se pueden calcular los tres parámetros: media, mediana y moda</p>
+                                <p class="example">Ejemplo: Estaturas en centímetros</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sensitivity-box">
+                    <h4>Sensibilidad a valores extremos</h4>
+                    <div class="sensitivity-content">
+                        <div class="sensitivity-visual">
+                            <svg width="400" height="120" viewBox="0 0 400 120">
+                                <!-- Datos originales -->
+                                <rect x="50" y="60" width="20" height="40" fill="#64B5F6" />
+                                <rect x="80" y="40" width="20" height="60" fill="#64B5F6" />
+                                <rect x="110" y="30" width="20" height="70" fill="#64B5F6" />
+                                <rect x="140" y="50" width="20" height="50" fill="#64B5F6" />
+                                <!-- Valor extremo -->
+                                <rect x="170" y="10" width="20" height="90" fill="#EF5350" />
+                                <!-- Línea base -->
+                                <line x1="40" y1="100" x2="200" y2="100" stroke="#333" stroke-width="1" />
+                                <!-- Mediana inicial -->
+                                <line x1="40" y1="50" x2="200" y2="50" stroke="#1565C0" stroke-width="2" stroke-dasharray="5,5" />
+                                <text x="210" y="53" fill="#1565C0" font-weight="bold">Mediana</text>
+                                <!-- Media inicial -->
+                                <line x1="40" y1="45" x2="200" y2="45" stroke="#E53935" stroke-width="2" stroke-dasharray="5,5" />
+                                <text x="210" y="40" fill="#E53935" font-weight="bold">Media inicial</text>
+                                <!-- Media con valor extremo -->
+                                <line x1="40" y1="30" x2="200" y2="30" stroke="#E53935" stroke-width="2" />
+                                <text x="210" y="25" fill="#E53935" font-weight="bold">Media con valor extremo</text>
+                                <!-- Valor extremo etiqueta -->
+                                <text x="180" y="115" text-anchor="middle">EXTREMO</text>
+                            </svg>
+                        </div>
+                        <p><strong>La mediana es menos sensible a valores extremos que la media</strong>. Como puedes ver en el gráfico, al introducir un valor extremo la media cambia significativamente, mientras que la mediana se mantiene estable.</p>
+                    </div>
+                </div>
             </div>
         `,
         'graficos-estadisticos': `
@@ -864,64 +1057,282 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="modal-body">
                 <p>Los gráficos estadísticos sirven para visualizar los datos de forma rápida y eficaz, facilitando su interpretación.</p>
                 
-                <h3>Diagrama de Barras</h3>
-                <ul>
-                    <li><strong>Uso</strong>: Para variables cualitativas o cuantitativas con pocos valores distintos</li>
-                    <li><strong>Construcción</strong>:
+                <div class="chart-card">
+                    <h3>Diagrama de Barras</h3>
+                    <div class="chart-visualization">
+                        <svg width="350" height="200" viewBox="0 0 350 200">
+                            <!-- Ejes -->
+                            <line x1="40" y1="170" x2="300" y2="170" stroke="#333" stroke-width="2" />
+                            <line x1="40" y1="170" x2="40" y2="30" stroke="#333" stroke-width="2" />
+                            <!-- Barras -->
+                            <rect x="70" y="70" width="30" height="100" fill="#42A5F5" />
+                            <rect x="120" y="120" width="30" height="50" fill="#42A5F5" />
+                            <rect x="170" y="90" width="30" height="80" fill="#42A5F5" />
+                            <rect x="220" y="40" width="30" height="130" fill="#42A5F5" />
+                            <!-- Etiquetas eje X -->
+                            <text x="85" y="185" text-anchor="middle">Toyota</text>
+                            <text x="135" y="185" text-anchor="middle">Ford</text>
+                            <text x="185" y="185" text-anchor="middle">Honda</text>
+                            <text x="235" y="185" text-anchor="middle">Audi</text>
+                            <!-- Etiquetas eje Y -->
+                            <text x="35" y="175" text-anchor="end">0</text>
+                            <text x="35" y="125" text-anchor="end">5</text>
+                            <text x="35" y="75" text-anchor="end">10</text>
+                            <text x="35" y="25" text-anchor="end">15</text>
+                            <!-- Líneas de cuadrícula -->
+                            <line x1="40" y1="125" x2="300" y2="125" stroke="#ddd" stroke-width="1" />
+                            <line x1="40" y1="75" x2="300" y2="75" stroke="#ddd" stroke-width="1" />
+                            <line x1="40" y1="25" x2="300" y2="25" stroke="#ddd" stroke-width="1" />
+                            <!-- Título -->
+                            <text x="170" y="15" text-anchor="middle" font-weight="bold">Repostajes por marca de coche</text>
+                        </svg>
+                    </div>
+                    <div class="chart-description">
                         <ul>
-                            <li>En el eje horizontal se representan los valores o categorías</li>
-                            <li>En el eje vertical se representan las frecuencias</li>
-                            <li>La altura de cada barra es proporcional a la frecuencia</li>
+                            <li><strong>Uso</strong>: Para variables cualitativas o cuantitativas con pocos valores distintos</li>
+                            <li><strong>Construcción</strong>:
+                                <ul>
+                                    <li>En el eje horizontal se representan los valores o categorías</li>
+                                    <li>En el eje vertical se representan las frecuencias</li>
+                                    <li>La altura de cada barra es proporcional a la frecuencia</li>
+                                </ul>
+                            </li>
+                            <li><strong>Ejemplo</strong>: Número de veces que se echa gasolina según marca del coche</li>
                         </ul>
-                    </li>
-                    <li><strong>Ejemplo</strong>: Número de veces que se echa gasolina según marca del coche</li>
-                </ul>
+                    </div>
+                </div>
 
-                <h3>Histograma</h3>
-                <ul>
-                    <li><strong>Uso</strong>: Para variables cuantitativas con muchos valores distintos</li>
-                    <li><strong>Construcción</strong>:
+                <div class="chart-card">
+                    <h3>Histograma</h3>
+                    <div class="chart-visualization">
+                        <svg width="350" height="200" viewBox="0 0 350 200">
+                            <!-- Ejes -->
+                            <line x1="40" y1="170" x2="300" y2="170" stroke="#333" stroke-width="2" />
+                            <line x1="40" y1="170" x2="40" y2="30" stroke="#333" stroke-width="2" />
+                            <!-- Barras adosadas -->
+                            <rect x="40" y="150" width="40" height="20" fill="#FF7043" />
+                            <rect x="80" y="110" width="40" height="60" fill="#FF7043" />
+                            <rect x="120" y="70" width="40" height="100" fill="#FF7043" />
+                            <rect x="160" y="50" width="40" height="120" fill="#FF7043" />
+                            <rect x="200" y="90" width="40" height="80" fill="#FF7043" />
+                            <rect x="240" y="130" width="40" height="40" fill="#FF7043" />
+                            
+                            <!-- Etiquetas eje X (rotadas para evitar solapamiento) -->
+                            <text x="60" y="185" text-anchor="middle" transform="rotate(0, 60, 185)">150-155</text>
+                            <text x="100" y="197" text-anchor="middle" transform="rotate(0, 100, 197)">155-160</text>
+                            <text x="140" y="185" text-anchor="middle" transform="rotate(0, 140, 185)">160-165</text>
+                            <text x="180" y="197" text-anchor="middle" transform="rotate(0, 180, 197)">165-170</text>
+                            <text x="220" y="185" text-anchor="middle" transform="rotate(0, 220, 185)">170-175</text>
+                            <text x="260" y="197" text-anchor="middle" transform="rotate(0, 260, 197)">175-180</text>
+                            
+                            <!-- Etiquetas eje Y -->
+                            <text x="35" y="170" text-anchor="end">0</text>
+                            <text x="35" y="130" text-anchor="end">2</text>
+                            <text x="35" y="90" text-anchor="end">4</text>
+                            <text x="35" y="50" text-anchor="end">6</text>
+                            
+                            <!-- Título -->
+                            <text x="170" y="15" text-anchor="middle" font-weight="bold">Distribución de estaturas en cm</text>
+                        </svg>
+                    </div>
+                    <div class="chart-description">
                         <ul>
-                            <li>Los datos se agrupan en intervalos (clases)</li>
-                            <li>Las barras aparecen adosadas (sin separación)</li>
-                            <li>El área de cada barra representa la frecuencia</li>
+                            <li><strong>Uso</strong>: Para variables cuantitativas con muchos valores distintos</li>
+                            <li><strong>Construcción</strong>:
+                                <ul>
+                                    <li>Los datos se agrupan en intervalos (clases)</li>
+                                    <li>Las barras aparecen adosadas (sin separación)</li>
+                                    <li>El área de cada barra representa la frecuencia</li>
+                                </ul>
+                            </li>
+                            <li><strong>Ejemplo</strong>: Estaturas del alumnado de una clase agrupadas en intervalos</li>
                         </ul>
-                    </li>
-                    <li><strong>Ejemplo</strong>: Estaturas del alumnado de una clase agrupadas en intervalos</li>
-                </ul>
+                    </div>
+                </div>
 
-                <h3>Polígono de Frecuencias</h3>
-                <ul>
-                    <li><strong>Uso</strong>: Para visualizar tendencias y evolución de los datos</li>
-                    <li><strong>Construcción</strong>:
+                <div class="chart-card">
+                    <h3>Polígono de Frecuencias</h3>
+                    <div class="chart-visualization">
+                        <svg width="350" height="200" viewBox="0 0 350 200">
+                            <!-- Ejes -->
+                            <line x1="40" y1="170" x2="300" y2="170" stroke="#333" stroke-width="2" />
+                            <line x1="40" y1="170" x2="40" y2="30" stroke="#333" stroke-width="2" />
+                            <!-- Barras transparentes -->
+                            <rect x="40" y="150" width="40" height="20" fill="#9575CD" opacity="0.3" />
+                            <rect x="80" y="110" width="40" height="60" fill="#9575CD" opacity="0.3" />
+                            <rect x="120" y="70" width="40" height="100" fill="#9575CD" opacity="0.3" />
+                            <rect x="160" y="50" width="40" height="120" fill="#9575CD" opacity="0.3" />
+                            <rect x="200" y="90" width="40" height="80" fill="#9575CD" opacity="0.3" />
+                            <rect x="240" y="130" width="40" height="40" fill="#9575CD" opacity="0.3" />
+                            <!-- Línea polígono -->
+                            <polyline points="60,150 100,110 140,70 180,50 220,90 260,130" 
+                                    fill="none" stroke="#673AB7" stroke-width="3" />
+                            <!-- Puntos en cada valor -->
+                            <circle cx="60" cy="150" r="5" fill="#673AB7" />
+                            <circle cx="100" cy="110" r="5" fill="#673AB7" />
+                            <circle cx="140" cy="70" r="5" fill="#673AB7" />
+                            <circle cx="180" cy="50" r="5" fill="#673AB7" />
+                            <circle cx="220" cy="90" r="5" fill="#673AB7" />
+                            <circle cx="260" cy="130" r="5" fill="#673AB7" />
+                            <!-- Título -->
+                            <text x="170" y="15" text-anchor="middle" font-weight="bold">Polígono de frecuencias</text>
+                        </svg>
+                    </div>
+                    <div class="chart-description">
                         <ul>
-                            <li>Se marca un punto en el extremo superior de cada barra de un diagrama de barras</li>
-                            <li>Se unen estos puntos mediante segmentos rectos</li>
+                            <li><strong>Uso</strong>: Para visualizar tendencias y evolución de los datos</li>
+                            <li><strong>Construcción</strong>:
+                                <ul>
+                                    <li>Se marca un punto en el extremo superior de cada barra de un diagrama de barras</li>
+                                    <li>Se unen estos puntos mediante segmentos rectos</li>
+                                </ul>
+                            </li>
+                            <li><strong>Ventaja</strong>: Permite visualizar la forma de la distribución</li>
                         </ul>
-                    </li>
-                    <li><strong>Ventaja</strong>: Permite visualizar la forma de la distribución</li>
-                </ul>
+                    </div>
+                </div>
 
-                <h3>Diagrama de Sectores (Gráfico Circular)</h3>
-                <ul>
-                    <li><strong>Uso</strong>: Ideal para mostrar proporciones o porcentajes del total</li>
-                    <li><strong>Construcción</strong>:
+                <div class="chart-card">
+                    <h3>Diagrama de Sectores (Gráfico Circular)</h3>
+                    <div class="chart-visualization">
+                        <svg width="350" height="220" viewBox="0 0 350 220">
+                            <!-- Título -->
+                            <text x="175" y="15" text-anchor="middle" font-weight="bold">Calificaciones</text>
+                            
+                            <!-- Círculo principal -->
+                            <g transform="translate(175, 110)">
+                                <!-- Matemáticamente correcto: 
+                                     Insuficiente (20%): 0° a 72°
+                                     Suficiente (15%): 72° a 126°
+                                     Bien (25%): 126° a 216°
+                                     Notable (30%): 216° a 324°
+                                     Sobresaliente (10%): 324° a 360° -->
+                                
+                                <!-- Insuficiente 20% (72°) -->
+                                <path d="M 0 0 L 80 0 A 80 80 0 0 1 24.72 76.16 Z" fill="#F44336" />
+                                
+                                <!-- Suficiente 15% (54°) -->
+                                <path d="M 0 0 L 24.72 76.16 A 80 80 0 0 1 -45.84 65.92 Z" fill="#FF9800" />
+                                
+                                <!-- Bien 25% (90°) -->
+                                <path d="M 0 0 L -45.84 65.92 A 80 80 0 0 1 -67.88 -42.56 Z" fill="#FFC107" />
+                                
+                                <!-- Notable 30% (108°) -->
+                                <path d="M 0 0 L -67.88 -42.56 A 80 80 0 0 1 47.04 -65.04 Z" fill="#4CAF50" />
+                                
+                                <!-- Sobresaliente 10% (36°) -->
+                                <path d="M 0 0 L 47.04 -65.04 A 80 80 0 0 1 80 0 Z" fill="#2196F3" />
+                                
+                                <!-- Etiquetas con posiciones ajustadas -->
+                                <text x="52" y="24" text-anchor="middle" fill="white" font-weight="bold">20%</text>
+                                <text x="52" y="39" text-anchor="middle" fill="white">Insuf.</text>
+                                
+                                <text x="-10" y="65" text-anchor="middle" fill="white" font-weight="bold">15%</text>
+                                <text x="-10" y="80" text-anchor="middle" fill="white">Suf.</text>
+                                
+                                <text x="-60" y="0" text-anchor="middle" fill="white" font-weight="bold">25%</text>
+                                <text x="-60" y="15" text-anchor="middle" fill="white">Bien</text>
+                                
+                                <text x="-15" y="-60" text-anchor="middle" fill="white" font-weight="bold">30%</text>
+                                <text x="-15" y="-45" text-anchor="middle" fill="white">Not.</text>
+                                
+                                <text x="65" y="-35" text-anchor="middle" fill="white" font-weight="bold">10%</text>
+                                <text x="65" y="-20" text-anchor="middle" fill="white">Sob.</text>
+                            </g>
+                            
+                            <!-- Leyenda -->
+                            <g transform="translate(175, 200)">
+                                <text x="0" y="0" text-anchor="middle" font-size="11" font-weight="bold">
+                                    Insuf. (20%) | Suf. (15%) | Bien (25%) | Not. (30%) | Sob. (10%)
+                                </text>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="chart-description">
                         <ul>
-                            <li>El círculo completo representa el 100% de los datos</li>
-                            <li>Cada sector tiene un ángulo proporcional a su frecuencia</li>
-                            <li>Ángulo = (frecuencia / total) × 360°</li>
+                            <li><strong>Uso</strong>: Ideal para mostrar proporciones o porcentajes del total</li>
+                            <li><strong>Construcción</strong>:
+                                <ul>
+                                    <li>El círculo completo representa el 100% de los datos</li>
+                                    <li>Cada sector tiene un ángulo proporcional a su frecuencia</li>
+                                    <li>Ángulo = (frecuencia / total) × 360°</li>
+                                </ul>
+                            </li>
+                            <li><strong>Ejemplo</strong>: Calificaciones en una asignatura (insuficiente, suficiente, bien, notable, sobresaliente)</li>
                         </ul>
-                    </li>
-                    <li><strong>Ejemplo</strong>: Calificaciones en una asignatura (insuficiente, suficiente, bien, notable, sobresaliente)</li>
-                </ul>
+                    </div>
+                </div>
 
-                <h3>Elección del Gráfico Adecuado</h3>
-                <ul>
-                    <li>Diagrama de barras: para comparar categorías</li>
-                    <li>Histograma: para distribuciones de datos continuos</li>
-                    <li>Gráfico circular: para mostrar partes de un todo</li>
-                    <li>Polígono de frecuencias: para mostrar tendencias</li>
-                </ul>
+                <div class="selection-guide">
+                    <h3>Elección del Gráfico Adecuado</h3>
+                    <div class="selection-table">
+                        <table style="width:100%; border-collapse: collapse; border: 1px solid #ddd; background-color: white;">
+                            <thead>
+                                <tr style="background-color: #3498db; color: white;">
+                                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Tipo de Gráfico</th>
+                                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Cuándo usarlo</th>
+                                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Mejor para visualizar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: #f2f9fe;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; vertical-align: middle;">
+                                        <svg width="80" height="40" viewBox="0 0 80 40">
+                                            <rect x="10" y="10" width="10" height="20" fill="#42A5F5" />
+                                            <rect x="30" y="5" width="10" height="25" fill="#42A5F5" />
+                                            <rect x="50" y="15" width="10" height="15" fill="#42A5F5" />
+                                        </svg>
+                                        <div style="text-align: center;">Diagrama de barras</div>
+                                    </td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Categorías discretas para comparar</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Comparación entre categorías diferentes</td>
+                                </tr>
+                                <tr style="background-color: white;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; vertical-align: middle;">
+                                        <svg width="80" height="40" viewBox="0 0 80 40">
+                                            <rect x="10" y="15" width="15" height="15" fill="#FF7043" />
+                                            <rect x="25" y="5" width="15" height="25" fill="#FF7043" />
+                                            <rect x="40" y="10" width="15" height="20" fill="#FF7043" />
+                                            <rect x="55" y="20" width="15" height="10" fill="#FF7043" />
+                                        </svg>
+                                        <div style="text-align: center;">Histograma</div>
+                                    </td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Datos numéricos continuos</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Distribución de los datos y su frecuencia</td>
+                                </tr>
+                                <tr style="background-color: #f2f9fe;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; vertical-align: middle;">
+                                        <svg width="80" height="40" viewBox="0 0 80 40">
+                                            <circle cx="40" cy="20" r="15" fill="#2196F3" />
+                                            <path d="M 40 20 L 40 5 A 15 15 0 0 1 53 28 Z" fill="#F44336" />
+                                            <path d="M 40 20 L 53 28 A 15 15 0 0 1 27 28 Z" fill="#4CAF50" />
+                                            <path d="M 40 20 L 27 28 A 15 15 0 0 1 40 5 Z" fill="#FFC107" />
+                                        </svg>
+                                        <div style="text-align: center;">Gráfico circular</div>
+                                    </td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Partes de un todo</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Proporciones y porcentajes</td>
+                                </tr>
+                                <tr style="background-color: white;">
+                                    <td style="padding: 10px; border: 1px solid #ddd; vertical-align: middle;">
+                                        <svg width="80" height="40" viewBox="0 0 80 40">
+                                            <polyline points="10,30 25,15 40,25 55,5 70,20" 
+                                                    fill="none" stroke="#673AB7" stroke-width="2" />
+                                            <circle cx="10" cy="30" r="3" fill="#673AB7" />
+                                            <circle cx="25" cy="15" r="3" fill="#673AB7" />
+                                            <circle cx="40" cy="25" r="3" fill="#673AB7" />
+                                            <circle cx="55" cy="5" r="3" fill="#673AB7" />
+                                            <circle cx="70" cy="20" r="3" fill="#673AB7" />
+                                        </svg>
+                                        <div style="text-align: center;">Polígono de frecuencias</div>
+                                    </td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Datos que evolucionan</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Tendencias y cambios en los datos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         `
     };
