@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y Gráficas - Matemáticas 1º ESO</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="alternate icon" href="../img/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <h1>Tablas y Gráficas</h1>
+        </div>
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-logo">Tablas y Gráficas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <div class="navbar-menu">
+                <a href="../index.html" class="navbar-item">Inicio</a>
+                <div class="dropdown">
+                    <a href="#" class="navbar-item dropdown-btn">Temas</a>
+                    <div class="dropdown-content">
+                        <a href="numeros-naturales.html">Números Naturales</a>
+                        <a href="divisibilidad.html">Divisibilidad</a>
+                        <a href="numeros-enteros.html">Números Enteros</a>
+                        <a href="fracciones.html">Fracciones</a>
+                        <a href="algebra.html">Álgebra</a>
+                        <a href="geometria.html">Geometría</a>
+                        <a href="tablas-graficas.html" class="active">Tablas y Gráficas</a>
+                        <a href="estadistica.html">Estadística</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="teoria-tablas" class="seccion-contenedor">
+            <h2>Tablas y Gráficas</h2>
+            
+            <div class="tarjetas-secciones">
+                <div class="tarjeta" data-modal="coordenadas-cartesianas">
+                    <h3>📍 Coordenadas Cartesianas</h3>
+                    <p>Sistema de coordenadas en el plano</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="informacion-puntos">
+                    <h3>📊 Información mediante Puntos</h3>
+                    <p>Relación entre variables representadas en el plano</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="interpretacion-graficas">
+                    <h3>📈 Interpretación de Gráficas</h3>
+                    <p>Lectura y análisis de representaciones gráficas</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="distribuciones-estadisticas">
+                    <h3>📋 Distribuciones Estadísticas</h3>
+                    <p>Variables cualitativas y cuantitativas</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="parametros-estadisticos">
+                    <h3>📏 Parámetros Estadísticos</h3>
+                    <p>Media, mediana y moda</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+                <div class="tarjeta" data-modal="graficos-estadisticos">
+                    <h3>📊 Gráficos Estadísticos</h3>
+                    <p>Visualización de datos estadísticos</p>
+                    <a href="#" class="btn btn-mas-informacion abrir-modal">Más Información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="herramientas-interactivas" class="seccion-contenedor">
+            <h2>Herramientas Interactivas</h2>
+            <div class="herramientas">
+                <div class="herramienta">
+                    <h3>Plano Cartesiano Interactivo</h3>
+                    <div class="herramienta-contenedor">
+                        <div class="configuracion-ejercicio">
+                            <h4>Configurar Ejercicio</h4>
+                            <div class="opciones-ejercicio">
+                                <div class="selector-tipo-ejercicio">
+                                    <label for="tipo-ejercicio">Tipo de Ejercicio:</label>
+                                    <select id="tipo-ejercicio">
+                                        <option value="ubicar-puntos">Ubicar Puntos</option>
+                                        <option value="dar-coordenadas">Dar Coordenadas</option>
+                                        <option value="interpretar-grafica">Interpretar Gráfica</option>
+                                    </select>
+                                </div>
+                                <div class="selector-dificultad">
+                                    <label for="dificultad">Dificultad:</label>
+                                    <select id="dificultad">
+                                        <option value="facil">Fácil</option>
+                                        <option value="medio">Medio</option>
+                                        <option value="dificil">Difícil</option>
+                                    </select>
+                                </div>
+                                <button id="generar-ejercicio" class="btn">Generar Ejercicio</button>
+                            </div>
+                        </div>
+
+                        <div class="ejercicio-actual">
+                            <h4>Ejercicio</h4>
+                            <div id="descripcion-ejercicio" class="descripcion-ejercicio">
+                                Haz clic en "Generar Ejercicio" para comenzar.
+                            </div>
+                            <div id="plano-cartesiano" class="plano-cartesiano">
+                                <!-- El plano cartesiano se dibujará aquí -->
+                            </div>
+                            <div id="respuesta-contenedor" class="respuesta-contenedor">
+                                <input type="text" id="respuesta-usuario" placeholder="Tu respuesta">
+                            </div>
+                            <div class="controles-ejercicio">
+                                <button id="comprobar-respuesta" class="btn btn-primario">Comprobar</button>
+                                <button id="mostrar-solucion" class="btn btn-secundario">Mostrar Solución</button>
+                            </div>
+                        </div>
+
+                        <div class="resultado-ejercicio">
+                            <h4>Resultado</h4>
+                            <p id="mensaje-resultado"></p>
+                            <div id="explicacion-solucion" class="explicacion-solucion"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="herramienta">
+                    <h3>Creador de Gráficos Estadísticos</h3>
+                    <div class="herramienta-contenedor">
+                        <div class="configuracion-grafico">
+                            <h4>Configurar Gráfico</h4>
+                            <div class="opciones-grafico">
+                                <div class="selector-tipo-grafico">
+                                    <label for="tipo-grafico">Tipo de Gráfico:</label>
+                                    <select id="tipo-grafico">
+                                        <option value="barras">Diagrama de Barras</option>
+                                        <option value="sectores">Diagrama de Sectores</option>
+                                        <option value="poligono">Polígono de Frecuencias</option>
+                                    </select>
+                                </div>
+                                <div class="entrada-datos">
+                                    <button id="añadir-dato" class="btn">Añadir Dato</button>
+                                    <button id="borrar-datos" class="btn btn-secundario">Borrar Datos</button>
+                                </div>
+                            </div>
+                            <div id="tabla-datos" class="tabla-datos">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Categoría</th>
+                                            <th>Valor</th>
+                                            <th>Acción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cuerpo-tabla-datos">
+                                        <!-- Aquí se añadirán las filas de datos -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button id="generar-grafico" class="btn btn-primario">Generar Gráfico</button>
+                        </div>
+
+                        <div class="visualizacion-grafico">
+                            <h4>Visualización</h4>
+                            <div id="contenedor-grafico" class="contenedor-grafico">
+                                <!-- Aquí se dibujará el gráfico -->
+                            </div>
+                        </div>
+
+                        <div class="analisis-grafico">
+                            <h4>Análisis</h4>
+                            <div id="estadisticas" class="estadisticas">
+                                <!-- Aquí se mostrarán las estadísticas calculadas -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Matemáticas 1º ESO. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modales -->
+    <div id="modal-coordenadas-cartesianas" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-informacion-puntos" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-interpretacion-graficas" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-distribuciones-estadisticas" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-parametros-estadisticos" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+    <div id="modal-graficos-estadisticos" class="modal-overlay">
+        <div class="modal-contenido"></div>
+    </div>
+
+    <script src="../js/modales-tablas-graficas.js"></script>
+    <script src="../js/herramienta-tablas-graficas.js"></script>
+</body>
+</html>
