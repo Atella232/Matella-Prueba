@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenidosModales = {
         'letras-numeros': `
             <div class="modal-header">
-                <h2>✳️ Letras en vez de números</h2>
+                <h2>🧩 Letras en vez de números</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -59,7 +59,7 @@ x = 17
         `,
         'expresiones-algebraicas': `
             <div class="modal-header">
-                <h2>✳️ Expresiones algebraicas</h2>
+                <h2>🔤 Expresiones algebraicas</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -83,7 +83,7 @@ x = 17
         `,
         'suma-resta-monomios': `
             <div class="modal-header">
-                <h2>🔹 Suma y resta de monomios</h2>
+                <h2>➕ Suma y resta de monomios</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -114,7 +114,7 @@ x = 17
         `,
         'multiplicacion-monomios': `
             <div class="modal-header">
-                <h2>🔹 Multiplicación de monomios</h2>
+                <h2>✖️ Multiplicación de monomios</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -135,7 +135,7 @@ x = 17
         `,
         'multiplicacion-monomio-suma': `
             <div class="modal-header">
-                <h2>🔹 Multiplicación de un monomio por una suma</h2>
+                <h2>🔢 Multiplicación de monomio por suma</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -151,23 +151,46 @@ x = 17
         `,
         'division-monomios': `
             <div class="modal-header">
-                <h2>🔹 División de monomios</h2>
+                <h2>➗ División de monomios</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
-                <h3>Regla básica</h3>
-                <p>Se simplifican los coeficientes y se restan los exponentes de las letras iguales.</p>
+                <p>La división de monomios se realiza siguiendo reglas específicas de exponentes y signos.</p>
                 
-                <h3>Ejemplos</h3>
-                <ul>
-                    <li>\\(\\frac{6x^3}{2x} = 3x^2\\)</li>
-                    <li>\\(\\frac{15a^2}{3a} = 5a\\)</li>
-                </ul>
+                <div class="math-examples">
+                    <div class="math-row">
+                        <div class="math-expression">
+                            <span class="fraction">
+                                <span class="numerator">6x³</span>
+                                <span class="denominator">2x</span>
+                            </span>
+                            <span class="math-equals">=</span>
+                            <span class="result">3x²</span>
+                        </div>
+                    </div>
+                    <div class="math-row">
+                        <div class="math-expression">
+                            <span class="fraction">
+                                <span class="numerator">15a²</span>
+                                <span class="denominator">-3a</span>
+                            </span>
+                            <span class="math-equals">=</span>
+                            <span class="result">-5a</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Pasos para dividir monomios:</p>
+                <ol>
+                    <li>Divide los coeficientes</li>
+                    <li>Resta los exponentes de las variables</li>
+                    <li>Mantén el signo resultante</li>
+                </ol>
             </div>
         `,
         'ecuaciones': `
             <div class="modal-header">
-                <h2>✳️ Ecuaciones</h2>
+                <h2>🟰 Ecuaciones</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -184,7 +207,7 @@ x = 17
         `,
         'tecnicas-ecuaciones': `
             <div class="modal-header">
-                <h2>✳️ Técnicas para resolver ecuaciones</h2>
+                <h2>🔍 Técnicas para resolver ecuaciones</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -210,7 +233,7 @@ x = 17
         `,
         'ecuaciones-primer-grado': `
             <div class="modal-header">
-                <h2>✳️ Ecuaciones de primer grado con una incógnita</h2>
+                <h2>📐 Ecuaciones de primer grado</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -232,7 +255,7 @@ x = 17
         `,
         'problemas-ecuaciones': `
             <div class="modal-header">
-                <h2>✳️ Resolución de problemas con ecuaciones</h2>
+                <h2>💡 Problemas con ecuaciones</h2>
                 <button class="btn-cerrar-modal">&times;</button>
             </div>
             <div class="modal-body">

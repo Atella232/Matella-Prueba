@@ -2,8 +2,6 @@
 const modalContents = {
     '✴️ Introducción': `
         <div class="modal-content">
-            <h3 class="modal-title">✴️ Introducción a Números Naturales</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Los números naturales son los primeros números que aprendemos a usar para contar: 1, 2, 3, 4...</p>
@@ -39,8 +37,6 @@ const modalContents = {
     `,
     '➕ Suma': `
         <div class="modal-content">
-            <h3 class="modal-title">➕ La Suma</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Sumar es unir, juntar o añadir cantidades.</p>
@@ -77,8 +73,6 @@ const modalContents = {
     `,
     '➖ Resta': `
         <div class="modal-content">
-            <h3 class="modal-title">➖ La Resta</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Restar es quitar, suprimir o hallar la diferencia entre dos cantidades.</p>
@@ -115,8 +109,6 @@ const modalContents = {
     `,
     '✖️ Multiplicación': `
         <div class="modal-content">
-            <h3 class="modal-title">✖️ La Multiplicación</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Multiplicar es una forma abreviada de sumar varias veces un mismo número.</p>
@@ -153,8 +145,6 @@ const modalContents = {
     `,
     '➗ División': `
         <div class="modal-content">
-            <h3 class="modal-title">➗ La División</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Dividir es repartir o distribuir en partes iguales.</p>
@@ -190,8 +180,6 @@ const modalContents = {
     `,
     '🔄 Uso de Paréntesis': `
         <div class="modal-content">
-            <h3 class="modal-title">🔄 Uso de Paréntesis</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Los paréntesis se utilizan para agrupar operaciones y cambiar el orden natural de cálculo.</p>
@@ -224,8 +212,6 @@ const modalContents = {
     `,
     '🧮 Orden de Operaciones': `
         <div class="modal-content">
-            <h3 class="modal-title">🧮 Orden de las Operaciones</h3>
-            
             <div class="modal-section">
                 <h4>Reglas</h4>
                 <p>Cuando una expresión contiene varias operaciones, se sigue este orden:</p>
@@ -263,8 +249,6 @@ const modalContents = {
     `,
     '🧠 Cálculo Mental': `
         <div class="modal-content">
-            <h3 class="modal-title">🧠 Cálculo Mental</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Técnicas para realizar cálculos rápidamente sin ayuda de calculadora.</p>

@@ -2,8 +2,6 @@
 const modalContents = {
     '📊 Relación de Divisibilidad': `
         <div class="modal-content">
-            <h3 class="modal-title">📊 Relación de Divisibilidad</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Un número a es divisible por otro número b si al dividir a entre b, el resto es cero.</p>
@@ -42,8 +40,6 @@ const modalContents = {
     `,
     '🔢 Múltiplos': `
         <div class="modal-content">
-            <h3 class="modal-title">🔢 Múltiplos de un Número</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Los múltiplos son el resultado de multiplicar un número por los números naturales.</p>
@@ -76,8 +72,6 @@ const modalContents = {
     `,
     '🧩 Divisores': `
         <div class="modal-content">
-            <h3 class="modal-title">🧩 Divisores de un Número</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>Divisores son números que dividen exactamente a otro número sin dejar resto.</p>
@@ -110,8 +104,6 @@ const modalContents = {
     `,
     '📝 Criterios de Divisibilidad': `
         <div class="modal-content">
-            <h3 class="modal-title">📝 Criterios de Divisibilidad</h3>
-            
             <div class="modal-section">
                 <h4>Reglas Rápidas de Divisibilidad</h4>
                 <div class="modal-table-container">
@@ -169,8 +161,6 @@ const modalContents = {
     `,
     '🔍 Primos y Compuestos': `
         <div class="modal-content">
-            <h3 class="modal-title">🔍 Números Primos y Compuestos</h3>
-            
             <div class="modal-section">
                 <div class="modal-table-container">
                     <table class="modal-table">
@@ -200,8 +190,6 @@ const modalContents = {
     `,
     '📈 Mínimo Común Múltiplo': `
         <div class="modal-content">
-            <h3 class="modal-title">📈 Mínimo Común Múltiplo (m.c.m.)</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>El menor múltiplo común (distinto de cero) entre dos o más números.</p>
@@ -229,8 +217,6 @@ const modalContents = {
     `,
     '📉 Máximo Común Divisor': `
         <div class="modal-content">
-            <h3 class="modal-title">📉 Máximo Común Divisor (m.c.d.)</h3>
-            
             <div class="modal-section">
                 <h4>Definición</h4>
                 <p>El mayor número que divide a dos o más números.</p>

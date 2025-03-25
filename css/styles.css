@@ -717,6 +717,92 @@ body.modo-oscuro .btn-cerrar-modal:hover {
     color: var(--color-primario);
 }
 
+/* Estilos para expresiones matemáticas en modales */
+.math-examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    background-color: var(--color-fondo-claro);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: var(--sombra-suave);
+}
+
+.math-row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.math-expression {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: var(--texto-claro);
+}
+
+.fraction {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.2;
+    border: 1px solid var(--texto-claro);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.numerator, .denominator {
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.denominator {
+    border-top: 1px solid var(--texto-claro);
+    background-color: rgba(0,0,0,0.05);
+}
+
+.math-equals {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.result {
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
+/* Modo oscuro para expresiones matemáticas */
+body.modo-oscuro .math-examples {
+    background-color: var(--color-fondo-tarjeta-oscuro);
+    color: var(--texto-oscuro);
+}
+
+body.modo-oscuro .math-expression {
+    color: var(--texto-oscuro);
+}
+
+body.modo-oscuro .fraction {
+    border-color: var(--texto-oscuro);
+}
+
+body.modo-oscuro .denominator {
+    border-top-color: var(--texto-oscuro);
+    background-color: rgba(255,255,255,0.1);
+}
+
+body.modo-oscuro .result {
+    color: var(--color-terciario);
+}
+
+body.modo-oscuro .resultado-ejercicio {
+    background-color: var(--color-fondo-tarjeta-oscuro);
+    color: var(--texto-oscuro);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 /* Modo oscuro para herramientas */
 body.modo-oscuro .herramienta {
     background-color: var(--color-fondo-tarjeta-oscuro);
